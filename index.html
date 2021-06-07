@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Password Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Gabriel Lacerda">
+
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="password-header">
+                <h1>Password Generator</h1>
+                <div class="password-gen">
+                    <p id="password"></p> <button id="copy">Copy</button>
+                </div>
+            </div>
+
+            <div class="passconfig">
+                <div class="passconfig-item">
+                    <label for="passLength">Comprimento da senha</label> <input value="15" min="4" max="30" type="number" id="passLength">
+                </div>
+                <div class="passconfig-item">
+                    <label for="includeMai">Letras maiúsculas</label> <input type="checkbox" id="includeMai">
+                </div>
+                <div class="passconfig-item">
+                    <label for="includeMin">Letras minúsculas</label> <input type="checkbox" id="includeMin">
+                </div>
+                <div class="passconfig-item">
+                    <label for="includeNum">Contém números</label> <input type="checkbox" id="includeNum">
+                </div>
+                <div class="passconfig-item">
+                    <label for="includeSym">Contém símbolos</label> <input type="checkbox" id="includeSym">
+                </div>
+            </div>
+
+            <div class="generate">
+                <button id="btnPassword">Gerar senha</button>
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>
