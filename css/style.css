@@ -1,13 +1,89 @@
 * {
-    /*padding: 0;
-    margin: 0;*/
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body {
+    background-image: url(../img/BG.png);
 }
 
 .container {
     position: absolute;
     top: 50%;
     left: 50%;
+    width: 25%;
     transform: translate(-50%, -50%);
+    background-color: #ccc;
+    padding: 25px;
+    background-color: rgb(65, 65, 65);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.295);
+}
+
+/* HEADER */
+.password-header h1 {
+    font-weight: 400;
+    font-size: 25px;
+    text-align: center;
+}
+
+.password-header .password-gen {
+    display: flex;
+    margin: 15px 0;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+    padding: 5px;
+}
+
+.password-header .password-gen .camp {
+    width: 80%;
+    padding: 10px;
+}
+
+.password-header .password-gen #copy {
+    border: 0;
+    background-color: rgb(20, 20, 20);
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* SECTION */
+.section .passconfig {
+    margin: 15px 0;
+}
+
+.section .passconfig .passconfig-item {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section .passconfig .passconfig-item input[type=number] {
+    background-color: rgb(39, 39, 39);
+    border: 0;
+    padding: 5px;
+    width: 45px;
+}
+
+.section .passconfig .passconfig-item input[type=number]:focus {
+    outline: 0;
+}
+
+.section .passconfig .passconfig-item input[type=checkbox]:checked {
+    color: black;
+}
+
+.section .generate button {
+    padding: 10px 0;
+    width: 100%;
+    border: 0;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(39, 39, 39);
+    cursor: pointer;
 }
